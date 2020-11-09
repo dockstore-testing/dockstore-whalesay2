@@ -1,3 +1,5 @@
+import thisshouldbreakeverything
+
 task hello {
   String name
 
