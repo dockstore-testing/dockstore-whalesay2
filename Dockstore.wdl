@@ -1,6 +1,5 @@
 task hello {
   String name
-  fakedatatype doIwork?
 
   command {
     echo 'hello ${name}!'
