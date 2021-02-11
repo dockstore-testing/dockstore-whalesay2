@@ -1,4 +1,4 @@
-import doesGitHubAppsPushThis?NoRefresh
+import testinggithubapps
 
 task hello {
   String name
