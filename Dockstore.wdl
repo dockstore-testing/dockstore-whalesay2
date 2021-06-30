@@ -1,9 +1,5 @@
 import testinggithubapps
 
-meta {
-  description: "1 2 3"
-}
-  
 task hello {
   String name
 
@@ -16,5 +12,9 @@ task hello {
 }
 
 workflow test {
+  meta {
+    description: "1 2 3"
+  }
+  
   call hello
 }
