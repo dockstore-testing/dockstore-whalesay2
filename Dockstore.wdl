@@ -1,5 +1,3 @@
-import testinggithubapps
-
 task hello {
   String name
 
