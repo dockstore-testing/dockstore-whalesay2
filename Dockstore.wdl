@@ -1,5 +1,9 @@
 import testinggithubapps
 
+meta {
+  description: "1 2 3"
+}
+  
 task hello {
   String name
 
