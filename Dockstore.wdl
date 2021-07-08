@@ -11,7 +11,7 @@ task hello {
 
 workflow test {
   meta {
-    description: "1 2 3"
+    description: "1 2 32342342324234"
   }
   
   call hello
