@@ -1,18 +1,11 @@
-task hello {
-  String name
-
-  command {
-    echo 'hello ${name}!'
-  }
-  output {
-    File response = stdout()
-  }
+version 1.0
+workflow w {
+    call hello {}
 }
-
-workflow test {
-  meta {
-    description: "1 2 32342342324234"
-  }
-  
-  call hello
+task hello {
+    command { echo "Hello from AGC" }
+    runtime {
+        docker: "ubuntu:latest"
+    }
+    output { String out = read_string( stdout() ) }
 }
