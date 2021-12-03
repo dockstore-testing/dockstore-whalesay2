@@ -9,7 +9,9 @@ workflow test {
 }
 
 task hello {
-  String name
+  input {
+    String name
+  }
 
   command {
     echo 'hello ${name}!'
