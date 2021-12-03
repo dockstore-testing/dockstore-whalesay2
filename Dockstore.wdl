@@ -3,9 +3,9 @@ workflow w {
     call hello {}
 }
 task hello {
-    command { echo "Hello from AGC" }
-    runtime {
-        docker: "ubuntu:latest"
-    }
+    String name
+
+    command { echo 'hello ${name}!' }
     output { String out = read_string( stdout() ) }
+    runtime { docker: "ubuntu:latest" }
 }
