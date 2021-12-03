@@ -1,6 +1,6 @@
 version 1.0
 workflow w {
-    call hello {}
+    call hello
 }
 task hello {
     String name
