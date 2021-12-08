@@ -12,7 +12,9 @@ task hello {
   input {
     String name
   }
-
+  runtime {
+    docker: "ubuntu:latest"
+  }
   command {
     echo 'hello ${name}!'
   }
