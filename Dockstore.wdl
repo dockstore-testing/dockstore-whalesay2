@@ -18,7 +18,5 @@ task hello {
   command {
     echo 'hello ${name}!'
   }
-  output {
-    File response = stdout()
-  }
+  output { String out = read_string( stdout() ) }
 }
