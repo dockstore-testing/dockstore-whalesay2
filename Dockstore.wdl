@@ -1,4 +1,4 @@
-import "secondary.wdl" as sub
+import "https://dockstore.org/api/ga4gh/trs/v2/tools/%23workflow%2Fgithub.com%2FRichard-Hansen%2Fdockstore-whalesay/versions/multiDescriptor/PLAIN_WDL/descriptor/%2Fsecondary.wdl" as sub
 
 workflow main_workflow {
 
