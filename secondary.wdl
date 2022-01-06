@@ -1,5 +1,3 @@
-version 1.0
-
 task hello {
   String addressee
   command {
