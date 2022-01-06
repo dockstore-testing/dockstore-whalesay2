@@ -4,6 +4,9 @@ task hello {
   input {
     String addressee
   }
+  runtime {
+    docker: "ubuntu:latest"
+  }
   command {
     echo "Hello ${addressee}!"
   }
@@ -15,6 +18,9 @@ task hello {
 task goodbye {
   input {
     String addressee
+  }
+  runtime {
+    docker: "ubuntu:latest"
   }
   command {
     echo "Goodbye ${addressee}!"
