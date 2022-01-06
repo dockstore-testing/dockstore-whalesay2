@@ -4,6 +4,9 @@ workflow w {
     call hello {}
 }
 
-# Calls my_task with one required input - it is okay to not
-# specify a value for my_task.opt_string since it is optional.
-call secondary
+task hello {
+    # Calls my_task with one required input - it is okay to not
+    # specify a value for my_task.opt_string since it is optional.
+    call secondary
+}
+
