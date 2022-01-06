@@ -1,4 +1,4 @@
-version 1.0
+version 1.1
 import "secondary.wdl" as sub
 
 workflow main_workflow {
