@@ -1,6 +1,6 @@
+version 1.0
 import "secondary.wdl" as sub
 
-version 1.0
 workflow main_workflow {
 
     call sub.hello_and_goodbye { input: hello_and_goodbye_input = "sub world" }
