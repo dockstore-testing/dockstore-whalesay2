@@ -1,5 +1,5 @@
 version 1.0
-import "../nested/secondary.wdl" as sub
+import "nested/secondary.wdl" as sub
 
 workflow main_workflow {
 
