@@ -9,7 +9,7 @@ task hello {
     String name
   }
   command {
-    echo 'hello ${name}!'
+    echo 'hello ${name}!' > output_file.txt
   }
-  output { String out = read_string( stdout() ) }
+  output { File totalReadsFile  = "output_file.txt" }
 }
