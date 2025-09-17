@@ -3,3 +3,5 @@ workflows:
    - subclass: WDL
      primaryDescriptorPath: /Dockstore.wdl
      publish: true
+     otherFiles:
+      - /stuff
